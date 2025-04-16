@@ -1,2 +1,1 @@
-# c-projects
-C programming projects
+# C programming projects
