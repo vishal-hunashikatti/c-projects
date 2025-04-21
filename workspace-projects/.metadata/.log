@@ -219,3 +219,13 @@ java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.preferen
 	at org.eclipse.linuxtools.internal.rpm.ui.editor.RpmPackageProposalsList.<init>(RpmPackageProposalsList.java:48)
 	at org.eclipse.linuxtools.internal.rpm.ui.editor.RpmPackageBuildProposalsJob.run(RpmPackageBuildProposalsJob.java:120)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2025-04-20 13:39:02.961 -----------------------------------------------
+eclipse.buildId=4.36.0.20250410-0643
+java.version=21.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.cdt.lsp.clangd 2 0 2025-04-20 13:39:35.537
+!MESSAGE Check clangd version: process timeout or consumer is not a instance of IClangdValidator!
