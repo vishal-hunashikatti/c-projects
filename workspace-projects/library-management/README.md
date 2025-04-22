@@ -50,9 +50,12 @@ Right now just writing down everything roughly. Will edit later when the whole s
   - All attributes mentioned in the Book Attributes section
 
 - User Database
-  - user name
+  - First Name
+  - Last Name
+  - user name (unique id)
   - email id
   - contact number
   - books borrowed
   - borrowed date
+  - book count
   

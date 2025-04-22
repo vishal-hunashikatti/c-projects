@@ -1,9 +1,2 @@
-disassembly.addressColor=60,200,60
-disassembly.addressColor,defaultValueBeforeOverriddenFromCSS=0,96,0
-disassembly.codeBytesColor=208,27,64
-disassembly.codeBytesColor,defaultValueBeforeOverriddenFromCSS=96,0,0
-disassembly.functionOffsetsColor=208,27,64
-disassembly.functionOffsetsColor,defaultValueBeforeOverriddenFromCSS=96,0,0
 eclipse.preferences.version=1
-overriddenByCSS=,disassembly.addressColor,disassembly.codeBytesColor,disassembly.functionOffsetsColor,
 useAnnotationsPrefPage=true
