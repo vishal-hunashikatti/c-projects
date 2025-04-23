@@ -8,10 +8,16 @@
  ============================================================================
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include "common_def.h"
+#include "user_def.h"
 
-int main(void) {
-	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
+int main(int argc, char** argv) {
+	
+	add_user();
+	
+	printf("\n\nPress Enter to exit the application");
+	while (getchar() != '\n')	{}
+	getchar();
+	
 	return EXIT_SUCCESS;
 }

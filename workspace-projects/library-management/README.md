@@ -59,3 +59,11 @@ Right now just writing down everything roughly. Will edit later when the whole s
   - borrowed date
   - book count
   
+typedef struct {
+	char first_name[MAX_FIRST_NAME_LEN];
+	char last_name[MAX_LAST_NAME_LEN];
+	char email_id[MAX_EMAIL_ID_LEN];
+	uint8_t book_count;
+	Date date_of_birth;
+	Credential authentication;
+}User;

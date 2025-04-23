@@ -1,7 +1,7 @@
 /*
  * common_def.h
  *
- *  Created on: Apr 22, 2025
+ *  Created on: April 22, 2025
  *      Author: vishal-hunashikatti
  */
 
@@ -9,11 +9,35 @@
 #define COMMON_DEF_H_
 
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
+
+#include "constants.h"
 
 typedef struct {
-	uint16_t year;
-	uint8_t month;
-	uint8_t day;	
+	char user_uid[MAX_USER_UID_LEN];
+	char user_password[MAX_PASSWORD_LEN];
+	bool is_admin;
+}Credential;
+
+typedef enum {
+	January = 1, February, March, April, May, June, 
+	July, August, September, October, November, December
+}Month;
+
+typedef struct {
+	uint16_t 	year;
+	Month 		month;
+	uint8_t 	day;	
 }Date;
+
+// Common function declarations
+uint16_t get_input_year();
+bool is_valid_year(uint16_t);
+bool is_valid_month(uint8_t);
+bool is_valid_day(uint8_t, Month);
+const char* get_month_name(Month);
 
 #endif /* COMMON_DEF_H_ */
