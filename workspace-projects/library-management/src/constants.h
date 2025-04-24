@@ -29,7 +29,7 @@
 /***************************************
  * String Length Limits for User Fields
  ***************************************/
-#define MAX_USER_UID_LEN     6    // Maximum characters in the user UID (user_uid -> user unique ID)
+#define MAX_USER_UID_LEN     7    // Maximum characters in the user UID (user_uid -> user unique ID)
 #define MAX_PASSWORD_LEN     50   // Maximum characters in the user's password
 #define MAX_FIRST_NAME_LEN   50   // Maximum characters in the user's first name
 #define MAX_LAST_NAME_LEN    50   // Maximum characters in the user's last name

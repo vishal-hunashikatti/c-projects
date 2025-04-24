@@ -15,9 +15,6 @@ int main(int argc, char** argv) {
 	
 	add_user();
 	
-	printf("\n\nPress Enter to exit the application");
-	while (getchar() != '\n')	{}
-	getchar();
-	
+	exit_wait_function();
 	return EXIT_SUCCESS;
 }
