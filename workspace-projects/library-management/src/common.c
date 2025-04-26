@@ -85,6 +85,7 @@ uint8_t get_input_date(Month month) {
 	}
 	return date;
 }
+
 bool is_valid_day(uint8_t day, Month month) {	
 	uint8_t days_in_month[] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 	 if (day < 1 && day > days_in_month[month - 1]) {

@@ -18,7 +18,7 @@ uint8_t add_user() {
 	
 	if (user_count >= MAX_USER_COUNT)	{
 		printf("ERROR : User limit reached.");
-		return FAILURE_EXIT;
+		return FUNCTION_EXIT_FAILURE;
 	}
 		
 	puts("==========================================");
@@ -54,5 +54,5 @@ uint8_t add_user() {
 	printf("\nDate of Birth	: %hhu %s, %hd", user[user_count].date_of_birth.date, 
 												   get_month_name(user[user_count].date_of_birth.month),
 												   user[user_count].date_of_birth.year);		
-	return SUCCESS_EXIT;
+	return FUNCTION_EXIT_SUCCESS;
 }

@@ -27,8 +27,8 @@ typedef struct {
 
 typedef struct {
 	char 		title[MAX_TITLE_LEN];
-	char 		isbn[MAX_ISBN_LEN];
 	Author 		author;
+	char 		isbn[MAX_ISBN_LEN];
 	Language 	language;
 	uint8_t 	edition;
 	char 		genre[MAX_GENRE_LEN];
@@ -41,5 +41,8 @@ typedef struct {
 	char 		user_name[MAX_USER_UID_LEN];
 	Date 		lent_date;
 }Book;
+
+//
+uint8_t add_book();
 
 #endif /* BOOKS_DEF_H_ */

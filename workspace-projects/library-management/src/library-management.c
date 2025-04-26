@@ -16,5 +16,6 @@ int main(int argc, char** argv) {
 	add_user();
 	
 	exit_wait_function();
+	
 	return EXIT_SUCCESS;
 }

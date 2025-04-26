@@ -8,6 +8,9 @@
 #ifndef USER_DEF_H_
 #define USER_DEF_H_
 
+/******************************************************************************
+ * INCLUDES
+ *****************************************************************************/
 #include "common_def.h"
 
 typedef struct {
@@ -20,4 +23,5 @@ typedef struct {
 }User;
 
 uint8_t add_user();
+
 #endif /* USER_DEF_H_ */

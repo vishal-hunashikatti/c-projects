@@ -38,7 +38,8 @@
 /****************************************
  * Count Limits for Multi-entry User Fields
  ****************************************/
-#define MAX_USER_COUNT 		 50   // Maximum characters in the user's email address
+#define MAX_USER_COUNT 		 255   // Maximum users that can be registered
+#define MAX_BOOK_COUNT       2048 // Maximum number of books in the data base
 
 /***************************************
  * Other Configurable Limits
@@ -47,7 +48,7 @@
 #define CURRENT_YEAR         2025
 
 // Exit codes for the program
-#define SUCCESS_EXIT     	 0   // Indicates successful execution
-#define FAILURE_EXIT     	-1   // Indicates general failure
+#define FUNCTION_EXIT_SUCCESS     	 1   // Indicates successful execution
+#define FUNCTION_EXIT_FAILURE     	 0   // Indicates general failure
 
 #endif /* CONSTANTS_H_ */
