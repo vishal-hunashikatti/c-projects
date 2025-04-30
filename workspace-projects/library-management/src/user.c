@@ -45,7 +45,7 @@ uint8_t add_user() {
 	printf("\nPlease enter the Date of birth of the user: ");
 	user[user_count].date_of_birth.year = get_input_year();
 	user[user_count].date_of_birth.month = get_input_month();
-	user[user_count].date_of_birth.date = get_input_date(user[user_count].date_of_birth.month);
+	user[user_count].date_of_birth.date = get_input_date(user[user_count].date_of_birth.year, user[user_count].date_of_birth.month);
 	
 	// Assign unique ID to the user
 	

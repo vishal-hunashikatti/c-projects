@@ -36,6 +36,7 @@ typedef struct {
 	char 		isbn[MAX_ISBN_LEN];
 	Language 	language;
 	uint8_t 	edition;
+	uint8_t     quantity;
 	char 		genre[MAX_GENRE_LEN];
 	char     	translator[MAX_TRANSLATOR_COUNT][MAX_TRANSLATOR_LEN];
 	uint8_t     translator_count; 
@@ -50,5 +51,8 @@ typedef struct {
 
 //
 uint8_t add_book();
+Book* delete_book();
+Book* lend_book();
+Book* receive_book();
 
 #endif /* BOOKS_DEF_H_ */

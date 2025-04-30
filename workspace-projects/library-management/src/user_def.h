@@ -23,5 +23,6 @@ typedef struct {
 }User;
 
 uint8_t add_user();
+User* delete_user(Credential);
 
 #endif /* USER_DEF_H_ */

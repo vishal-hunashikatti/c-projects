@@ -63,14 +63,14 @@ bool is_valid_month(uint8_t month) {
 	return ((month >= 1 && month <=12) ? true : false);
 }
 
-uint8_t get_input_date(Month month) {
+uint8_t get_input_date(uint16_t year, Month month) {
 	uint8_t attempts = 0;
-	uint8_t date = 0;
+	uint8_t date = 0; 
 	while(attempts < 3) {	
 		printf("Day		: ");
 		scanf("%hhu", &date);		
 		
-		if(is_valid_day(date, month)) {
+		if(is_valid_day(year, month, date)) {
 			break;
 		} else {
 			attempts++;
@@ -86,9 +86,12 @@ uint8_t get_input_date(Month month) {
 	return date;
 }
 
-bool is_valid_day(uint8_t day, Month month) {	
-	uint8_t days_in_month[] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-	 if (day < 1 && day > days_in_month[month - 1]) {
+bool is_valid_day(uint16_t year, Month month, uint8_t day) {	
+	uint8_t days_in_month[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+	if((year % 4 == 0) && (year % 100 != 0 || year % 400 == 0)) {
+		days_in_month[1] = 29;
+	}
+	if (day < 1 || day > days_in_month[month - 1]) {
         return false;
     }
     return true;
