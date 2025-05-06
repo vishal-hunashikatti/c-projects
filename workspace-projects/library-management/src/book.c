@@ -92,14 +92,7 @@ uint8_t add_book() {
 	printf("Translated Language	: ");
 	fgets(book[book_count].language.translated_language, MAX_LANGUAGE_LEN, stdin);
 	book[book_count].language.translated_language[strcspn(book[book_count].language.translated_language, "\n")] = 0;
-/*	
-	printf("\nIf the book is translated version, name the authors who translated the original work.\n");
-	printf("Are translators available for this book (\"Y/y for yes\"): ");
-	char translator_availabe = '\0';
-	scanf("%c", &translator_availabe);
-	while ((ch = getchar()) != '\n' && ch != EOF);
-*/	
-//	if(translator_availabe == 'Y' || translator_availabe == 'y') {
+
 	if(strcmp(book[book_count].language.translated_language, "\0")) {
 		printf("\nPlease enter the number of authors for this book : ");
 		scanf("%hhu", &translator_count);

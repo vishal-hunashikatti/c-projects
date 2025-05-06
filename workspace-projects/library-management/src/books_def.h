@@ -45,8 +45,8 @@ typedef struct {
 	Date 		publication_date;
 	char 		book_format[MAX_FORMAT_LEN];
 	Date 		indatabase_date;
-	char 		user_name[MAX_USER_UID_LEN];
 	Date 		lent_date;
+	char 		user_name[MAX_USER_UID_LEN];
 }Book;
 
 //

@@ -39,7 +39,6 @@ bool is_valid_year(uint16_t);
 uint8_t get_input_month();
 bool is_valid_month(uint8_t);
 uint8_t get_input_date(uint16_t, Month);
-//bool is_valid_day(uint8_t, Month);
 bool is_valid_day(uint16_t, Month, uint8_t);
 const char* get_month_name(Month);
 void exit_wait_function();
