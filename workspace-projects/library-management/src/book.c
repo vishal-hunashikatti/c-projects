@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// global declarations required for the Users
+// Global declarations required for the Users
 uint16_t book_count = 0; 
 Book book[MAX_BOOK_COUNT];
 

@@ -10,7 +10,7 @@
 #include "user_def.h"
 #include <stdio.h>
 
-// global declarations required for the Users
+// Global declarations required for the Users
 uint8_t user_count = 0; 
 User user[MAX_USER_COUNT];
 
